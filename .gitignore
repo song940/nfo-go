@@ -1,0 +1,8 @@
+*.iml
+*.log
+*.exe
+.mvn/
+.idea/
+*.tar
+examples
+c.out
