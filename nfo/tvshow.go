@@ -6,7 +6,7 @@ import (
 )
 
 type TVShow struct {
-	Base
+	Movie
 
 	XMLName        xml.Name `xml:"tvshow"`
 	ShowTitle      string   `xml:"showtitle,omitempty"`

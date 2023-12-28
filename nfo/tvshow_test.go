@@ -13,7 +13,7 @@ const (
 
 func TestTVShowMarshal(t *testing.T) {
 	tvshow := TVShow{
-		Base: Base{
+		Movie: Movie{
 			Title:         "Title",
 			OriginalTitle: "Original title",
 			UserRating:    0,

@@ -9,14 +9,6 @@ type Episode struct {
 	XMLName xml.Name `xml:"episodedetails"`
 
 	TVShow
-
-	FileInfo struct {
-		StreamDetails struct {
-			Video    []StreamVideo    `xml:"video,omitempty"`
-			Audio    []StreamAudio    `xml:"audio,omitempty"`
-			Subtitle []StreamSubtitle `xml:"subtitle,omitempty"`
-		} `xml:"streamdetails,omitempty"`
-	} `xml:"fileinfo,omitempty"`
 }
 
 func ReadEpisodeNfo(r io.Reader) (*Episode, error) {
