@@ -68,10 +68,10 @@ type Movie struct {
 }
 
 type Rating struct {
-	Value   float64 `xml:"value,omitempty"`
-	Votes   int64   `xml:"votes,omitempty"`
+	Value   float32 `xml:"value,omitempty"`
+	Votes   int     `xml:"votes,omitempty"`
 	Name    string  `xml:"name,attr,omitempty"`
-	Max     int64   `xml:"max,attr,omitempty"`
+	Max     float32 `xml:"max,attr,omitempty"`
 	Default bool    `xml:"default,attr,omitempty"`
 }
 
@@ -114,10 +114,11 @@ type StreamSubtitle struct {
 }
 
 type Actor struct {
+	ID    int    `xml:"id,omitempty"`
 	Name  string `xml:"name,omitempty"`
 	Type  string `xml:"type,omitempty"`
 	Role  string `xml:"role,omitempty"`
-	Order int64  `xml:"order,omitempty"`
+	Order int    `xml:"order,omitempty"`
 	Thumb string `xml:"thumb,omitempty"`
 }
 
